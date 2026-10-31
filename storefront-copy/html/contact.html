@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Send Guru Aashish Saree a question about products, availability, or an order.">
+    <meta name="theme-color" content="#8b1e3f">
+    <link rel="manifest" href="app.webmanifest">
+    <title>Contact the Store | Guru Aashish Saree</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/advanced-ui.css">
+    <link rel="stylesheet" href="../css/commerce.css">
+    <link rel="stylesheet" href="../css/content-pages.css">
+</head>
+<body>
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div class="top-bar"><p>Free shipping on orders ₹999 and above</p></div>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><span class="logo-symbol">G</span><div><strong>Guru Aashish</strong><small>SAREE</small></div></a>
+            <nav class="nav-menu" id="navMenu" aria-label="Main navigation"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">Our Story</a><a href="faq.html">Help</a><a href="contact.html" class="active">Contact</a></nav>
+            <div class="nav-actions">
+                <a class="nav-icon" href="wishlist.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="count" id="wishlistCount">0</span></a>
+                <button class="nav-icon install-app-button" id="installApp" type="button" aria-label="Install this app" title="Install app"><i class="fa-solid fa-arrow-down"></i></button>
+                <a class="nav-icon" href="cart.html" aria-label="Shopping bag"><i class="fa-solid fa-bag-shopping"></i><span class="count" id="cartCount">0</span></a>
+                <button class="theme-button" id="themeButton" type="button" aria-label="Toggle color theme"><i class="fa-solid fa-moon"></i></button>
+                <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="toast" id="toast" role="status" aria-live="polite"><i class="fa-solid fa-check" aria-hidden="true"></i><span id="toastMessage"></span></div>
+    <section class="content-hero"><span>We're here to help</span><h1>Let's talk about your next drape</h1><p>Ask about a saree, product details, availability, or a WhatsApp order. The message stays a draft until you choose to send it.</p></section>
+    <main class="content-page" id="mainContent">
+        <div class="contact-layout">
+            <section class="contact-copy">
+                <span class="content-eyebrow">Contact Guru Aashish Saree</span>
+                <h2>A little help can make the choice easier.</h2>
+                <p>Tell us what you are looking for. We will prepare your note in WhatsApp so you can check the details before sending.</p>
+                <div class="contact-cards">
+                    <article class="contact-card"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><div><h3>WhatsApp</h3><p>Send a product question or request order details.</p></div></article>
+                    <article class="contact-card"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><div><h3>Confirm before ordering</h3><p>Ask the store to confirm stock, product specifications, shipping, and final charges.</p></div></article>
+                </div>
+            </section>
+            <form class="contact-form" id="contactForm">
+                <h2>Send an enquiry</h2>
+                <label for="contactName">Your name<input id="contactName" name="name" autocomplete="name" maxlength="100" required></label>
+                <label for="contactPhone">Phone number (optional)<input id="contactPhone" name="phone" type="tel" autocomplete="tel" maxlength="24"></label>
+                <label for="contactTopic">What can we help with?
+                    <select id="contactTopic" name="topic" required>
+                        <option value="">Choose a topic</option><option>Product details</option><option>Availability</option><option>Shipping and delivery</option><option>Returns and exchange</option><option>Order enquiry</option><option>Other question</option>
+                    </select>
+                </label>
+                <label for="contactMessage">Your message<textarea id="contactMessage" name="message" maxlength="1200" required placeholder="Include the saree name or product link if you have one."></textarea></label>
+                <button class="btn btn-dark" type="submit">Prepare WhatsApp message <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></button>
+                <p class="contact-status" id="contactStatus" role="status" aria-live="polite"></p>
+                <a class="btn btn-dark contact-whatsapp-link" id="contactWhatsAppLink" href="#" target="_blank" rel="noopener noreferrer" hidden>Review and send in WhatsApp</a>
+                <p class="checkout-note">This demo does not send or store your enquiry. Review the draft and press Send in WhatsApp if you want to contact the store.</p>
+            </form>
+        </div>
+        <div class="content-cta"><a class="btn btn-outline" href="faq.html">Read the FAQs</a></div>
+    </main>
+    <footer class="content-footer"><nav class="content-footer-links" aria-label="Customer care"><a href="shop.html">Shop</a><a href="about.html">Our Story</a><a href="shipping-returns.html">Shipping & Returns</a><a href="faq.html">FAQs</a><a href="privacy-terms.html">Privacy & Terms</a><a href="wishlist.html">Wishlist</a><a href="cart.html">Shopping Bag</a></nav><p>© <span data-current-year></span> Guru Aashish Saree. Store details and fulfilment are confirmed directly with the shop.</p></footer>
+    <script src="../js/product.js"></script><script src="../js/commerce.js"></script><script src="../js/store-config.js"></script><script src="../js/content-pages.js"></script><script src="../js/storefront-features.js"></script>
+</body>
+</html>

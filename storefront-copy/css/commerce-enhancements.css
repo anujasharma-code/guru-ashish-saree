@@ -1,0 +1,130 @@
+.coupon-form {
+    margin: 20px 0;
+    padding: 16px;
+    border: 1px solid var(--border);
+    background: var(--cream);
+}
+
+.coupon-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--black);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.coupon-input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.coupon-input-row input {
+    flex: 1 1 130px;
+    min-width: 0;
+    min-height: 42px;
+    padding: 9px 11px;
+    border: 1px solid var(--border);
+    background: var(--white);
+    color: var(--black);
+}
+
+.coupon-apply,
+.coupon-remove {
+    min-height: 42px;
+    padding: 9px 13px;
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.coupon-remove {
+    border-color: var(--border);
+    background: transparent;
+    color: var(--black);
+}
+
+.coupon-hint {
+    display: block;
+    margin-top: 8px;
+    color: var(--gray);
+    font-size: 11px;
+}
+
+.discount-line strong {
+    color: #26733a;
+}
+
+.total-line {
+    margin-top: 8px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    font-weight: 600;
+}
+
+.shipping-progress {
+    margin: 18px 0;
+    padding: 14px;
+    border: 1px solid var(--border);
+    background: var(--cream);
+}
+
+.shipping-progress p {
+    margin: 0 0 9px;
+    color: var(--black);
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.shipping-progress-track {
+    height: 6px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: rgba(125, 32, 59, .12);
+}
+
+.shipping-progress-track span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--primary), var(--gold));
+    transition: width .45s ease;
+}
+
+.shipping-progress small {
+    display: block;
+    margin-top: 8px;
+    color: var(--gray);
+    font-size: 10px;
+}
+
+.whatsapp-order-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.whatsapp-order-link[hidden] {
+    display: none;
+}
+
+body.dark .coupon-form {
+    background: #302727;
+}
+
+body.dark .coupon-form label,
+body.dark .coupon-remove {
+    color: var(--black);
+}
+
+@media (max-width: 560px) {
+    .coupon-input-row input {
+        flex-basis: 100%;
+    }
+
+    .coupon-apply,
+    .coupon-remove {
+        flex: 1;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Answers about browsing, coupons, WhatsApp ordering, shipping, and saree details.">
+    <meta name="theme-color" content="#8b1e3f">
+    <link rel="manifest" href="app.webmanifest">
+    <title>FAQs & Help | Guru Aashish Saree</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/advanced-ui.css">
+    <link rel="stylesheet" href="../css/commerce.css">
+    <link rel="stylesheet" href="../css/content-pages.css">
+</head>
+<body>
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div class="top-bar"><p>Free shipping on orders ₹999 and above</p></div>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><span class="logo-symbol">G</span><div><strong>Guru Aashish</strong><small>SAREE</small></div></a>
+            <nav class="nav-menu" id="navMenu" aria-label="Main navigation"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">Our Story</a><a href="faq.html" class="active">Help</a><a href="contact.html">Contact</a></nav>
+            <div class="nav-actions">
+                <a class="nav-icon" href="wishlist.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="count" id="wishlistCount">0</span></a>
+                <button class="nav-icon install-app-button" id="installApp" type="button" aria-label="Install this app" title="Install app"><i class="fa-solid fa-arrow-down"></i></button>
+                <a class="nav-icon" href="cart.html" aria-label="Shopping bag"><i class="fa-solid fa-bag-shopping"></i><span class="count" id="cartCount">0</span></a>
+                <button class="theme-button" id="themeButton" type="button" aria-label="Toggle color theme"><i class="fa-solid fa-moon"></i></button>
+                <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="toast" id="toast" role="status" aria-live="polite"><i class="fa-solid fa-check" aria-hidden="true"></i><span id="toastMessage"></span></div>
+    <section class="content-hero"><span>Helpful answers</span><h1>Good to know before you choose</h1><p>Browse common questions about the collection and this browser-based storefront. The shop confirms order details directly.</p></section>
+    <main class="content-page" id="mainContent">
+        <section class="content-section">
+            <span class="content-eyebrow">Shopping the collection</span>
+            <h2>Frequently asked questions</h2>
+            <div class="faq-list">
+                <details class="faq-item"><summary>How do I place an order?</summary><div class="faq-answer">Add sarees to your bag, continue to delivery, and prepare a WhatsApp message. Review the message and press Send in WhatsApp. The store must confirm availability, shipping charges, and the order before it is accepted.</div></details>
+                <details class="faq-item"><summary>What happens when I use the WELCOME10 coupon?</summary><div class="faq-answer">The demo subtracts 10% of your bag subtotal and shows the updated estimate. Mention the coupon in your WhatsApp message and ask the store to confirm the offer applies to your final order.</div></details>
+                <details class="faq-item"><summary>Can I confirm the fabric, colour, and blouse piece?</summary><div class="faq-answer">Product details are shown on each product page. Colours can look different across screens, so contact the store to confirm fabric, measurements, blouse-piece inclusion, care instructions, and current availability before ordering.</div></details>
+                <details class="faq-item"><summary>How much is shipping and when will it arrive?</summary><div class="faq-answer">The demo banner shows free shipping on orders of ₹999 and above. Delivery area, carrier, timeline, and any final shipping charge must be confirmed with the store; this demo does not calculate live shipping.</div></details>
+                <details class="faq-item"><summary>Can I pay online or track an order here?</summary><div class="faq-answer">No. This frontend demo does not process payments, create production orders, or provide live tracking. Do not treat the WhatsApp draft as an accepted order. Confirm payment and delivery details with the store.</div></details>
+                <details class="faq-item"><summary>What is the return or exchange policy?</summary><div class="faq-answer">Return and exchange eligibility depends on the store's policy and the item. Please confirm the current policy with the store before paying or confirming an order. See <a href="shipping-returns.html">Shipping & Returns</a>.</div></details>
+                <details class="faq-item"><summary>Where are my bag and wishlist saved?</summary><div class="faq-answer">They are saved in local storage in this browser on this device. They are not attached to an account and may disappear if browser data is cleared.</div></details>
+            </div>
+        </section>
+        <div class="content-cta"><a class="btn btn-dark" href="contact.html">Ask the store</a><a class="btn btn-outline" href="shop.html">Continue shopping</a></div>
+    </main>
+    <footer class="content-footer"><nav class="content-footer-links" aria-label="Customer care"><a href="shop.html">Shop</a><a href="shipping-returns.html">Shipping & Returns</a><a href="contact.html">Contact</a><a href="privacy-terms.html">Privacy & Terms</a><a href="wishlist.html">Wishlist</a><a href="cart.html">Shopping Bag</a></nav><p>© <span data-current-year></span> Guru Aashish Saree. Store details and fulfilment are confirmed directly with the shop.</p></footer>
+    <script src="../js/product.js"></script><script src="../js/commerce.js"></script><script src="../js/store-config.js"></script><script src="../js/content-pages.js"></script><script src="../js/storefront-features.js"></script>
+</body>
+</html>
