@@ -1,0 +1,919 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta name="theme-color" content="#8b1e3f">
+    <link rel="manifest" href="app.webmanifest">
+
+    <title>Shop Sarees | Guru Aashish Saree</title>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+ 
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+
+<!-- Only include on pages that need shop-specific styles -->
+<link rel="stylesheet" href="css/shop.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet" href="../css/shoop.css"> 
+    <link rel="stylesheet" href="../css/commerce.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     LOADER
+===================================================== -->
+
+<div class="loader" id="loader">
+
+    <div class="loader-logo">
+        GAS
+    </div>
+
+    <div class="loader-ring"></div>
+
+    <p>
+        Guru Aashish Saree
+    </p>
+
+</div>
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div class="toast" id="toast">
+
+    <i class="fa-solid fa-check"></i>
+
+    <span id="toastMessage">
+        Added
+    </span>
+
+</div>
+
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top-bar">
+
+    <p>
+        <i class="fa-solid fa-truck-fast"></i>
+        Free shipping on orders above ₹999
+    </p>
+
+    <p>
+        <i class="fa-solid fa-phone"></i>
+        Customer Care: +91 XXXXX XXXXX
+    </p>
+
+</div>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-symbol">
+                G
+            </span>
+
+            <div>
+
+                <strong>
+                    Guru Aashish
+                </strong>
+
+                <small>
+                    SAREE
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html" class="active">
+                Shop
+            </a>
+
+            <a href="index.html#collections">
+                Collections
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+
+            <button
+                class="nav-icon"
+                id="shopSearchButton"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+
+            <button
+                class="nav-icon"
+                id="wishlistNav"
+            >
+
+                <i class="fa-regular fa-heart"></i>
+
+                <span class="count" id="wishlistCount">
+                    0
+                </span>
+
+            </button>
+
+            <button
+                class="nav-icon install-app-button"
+                id="installApp"
+                type="button"
+                aria-label="Install this app"
+                title="Install app"
+            >
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+
+
+            <button
+                class="nav-icon"
+                id="cartNav"
+            >
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <span
+                    class="count"
+                    id="cartCount"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="nav-icon"
+                id="accountNav"
+            >
+
+                <i class="fa-regular fa-user"></i>
+
+            </button>
+
+
+            <button
+                class="theme-button"
+                id="themeButton"
+                type="button"
+                aria-label="Toggle color theme"
+                title="Toggle color theme"
+            >
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+
+            <button
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     SHOP HERO
+===================================================== -->
+
+<section class="shop-hero">
+
+    <div class="shop-hero-content">
+
+        <span>
+            GURU AASHISH COLLECTION
+        </span>
+
+        <h1>
+            Discover Your
+            <em>Perfect Drape</em>
+        </h1>
+
+        <p>
+            Explore our handpicked collection
+            of elegant Indian sarees.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHOP
+===================================================== -->
+
+<main class="shop-container">
+
+
+    <!-- =================================================
+         SHOP HEADER
+    ================================================== -->
+
+    <div class="shop-heading">
+
+        <div>
+
+            <span class="eyebrow">
+                OUR COLLECTION
+            </span>
+
+            <h2>
+                All Sarees
+            </h2>
+
+        </div>
+
+
+        <div class="shop-result">
+
+            <span id="resultCount">
+                0 Products
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         SHOP TOOLBAR
+    ================================================== -->
+
+    <div class="shop-toolbar">
+
+
+        <!-- FILTER BUTTON -->
+
+        <button
+            class="filter-toggle"
+            id="filterToggle"
+        >
+
+            <i class="fa-solid fa-sliders"></i>
+
+            Filters
+
+        </button>
+
+
+        <!-- SEARCH -->
+
+        <div class="shop-search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="shopSearch"
+                placeholder="Search sarees..."
+            >
+
+        </div>
+
+
+        <!-- SORT -->
+
+        <div class="sort-box">
+
+            <label>
+                Sort:
+            </label>
+
+            <select id="sortProducts">
+
+                <option value="default">
+                    Featured
+                </option>
+
+                <option value="price-low">
+                    Price: Low to High
+                </option>
+
+                <option value="price-high">
+                    Price: High to Low
+                </option>
+
+                <option value="popular">
+                    Most Popular
+                </option>
+
+                <option value="newest">
+                    Newest
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         SHOP CONTENT
+    ================================================== -->
+
+    <div class="shop-layout">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="filter-sidebar"
+            id="filterSidebar"
+        >
+
+
+            <div class="filter-header">
+
+                <h3>
+                    Filters
+                </h3>
+
+                <button id="clearFilters">
+                    Clear All
+                </button>
+
+            </div>
+
+
+            <!-- CATEGORY -->
+
+            <div class="filter-group">
+
+                <h4>
+                    Category
+                </h4>
+
+
+                <label class="filter-option">
+
+                    <input
+                        type="radio"
+                        name="category"
+                        value="all"
+                        checked
+                    >
+
+                    <span>
+                        All Sarees
+                    </span>
+
+                </label>
+
+
+                <label class="filter-option">
+
+                    <input
+                        type="radio"
+                        name="category"
+                        value="silk"
+                    >
+
+                    <span>
+                        Silk Sarees
+                    </span>
+
+                </label>
+
+
+                <label class="filter-option">
+
+                    <input
+                        type="radio"
+                        name="category"
+                        value="cotton"
+                    >
+
+                    <span>
+                        Cotton Sarees
+                    </span>
+
+                </label>
+
+
+                <label class="filter-option">
+
+                    <input
+                        type="radio"
+                        name="category"
+                        value="designer"
+                    >
+
+                    <span>
+                        Designer Sarees
+                    </span>
+
+                </label>
+
+
+                <label class="filter-option">
+
+                    <input
+                        type="radio"
+                        name="category"
+                        value="banarasi"
+                    >
+
+                    <span>
+                        Banarasi Sarees
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <!-- PRICE -->
+
+            <div class="filter-group">
+
+                <h4>
+                    Price Range
+                </h4>
+
+                <div class="price-values">
+
+                    <span>
+                        ₹<span id="minPriceValue">
+                            500
+                        </span>
+                    </span>
+
+                    <span>
+                        ₹<span id="maxPriceValue">
+                            10000
+                        </span>
+                    </span>
+
+                </div>
+
+
+                <input
+                    type="range"
+                    id="minPrice"
+                    min="500"
+                    max="10000"
+                    value="500"
+                    step="100"
+                >
+
+
+                <input
+                    type="range"
+                    id="maxPrice"
+                    min="500"
+                    max="10000"
+                    value="10000"
+                    step="100"
+                >
+
+            </div>
+
+
+            <!-- BADGES -->
+
+            <div class="filter-group">
+
+                <h4>
+                    Collection
+                </h4>
+
+
+                <label class="checkbox-option">
+
+                    <input
+                        type="checkbox"
+                        value="New"
+                        class="badge-filter"
+                    >
+
+                    <span>
+                        New Arrivals
+                    </span>
+
+                </label>
+
+
+                <label class="checkbox-option">
+
+                    <input
+                        type="checkbox"
+                        value="Sale"
+                        class="badge-filter"
+                    >
+
+                    <span>
+                        On Sale
+                    </span>
+
+                </label>
+
+
+                <label class="checkbox-option">
+
+                    <input
+                        type="checkbox"
+                        value="Bestseller"
+                        class="badge-filter"
+                    >
+
+                    <span>
+                        Bestsellers
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <!-- STOCK -->
+
+            <div class="filter-group">
+
+                <h4>
+                    Availability
+                </h4>
+
+                <label class="checkbox-option">
+
+                    <input
+                        type="checkbox"
+                        id="stockFilter"
+                    >
+
+                    <span>
+                        In Stock Only
+                    </span>
+
+                </label>
+
+            </div>
+
+            <div class="filter-group">
+                <h4>Colour</h4>
+                <select id="colorFilter" class="feature-filter" aria-label="Filter by colour">
+                    <option value="all">All colours</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <h4>Suggested occasion</h4>
+                <select id="occasionFilter" class="feature-filter" aria-label="Filter by suggested occasion">
+                    <option value="all">Any occasion</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Festive">Festive</option>
+                    <option value="Celebration">Celebration</option>
+                    <option value="Everyday">Everyday</option>
+                    <option value="Workwear">Workwear</option>
+                </select>
+                <small class="filter-disclaimer">Styling suggestions, not product guarantees.</small>
+            </div>
+
+
+        </aside>
+
+
+        <!-- =================================================
+             PRODUCTS
+        ================================================== -->
+
+        <section class="shop-products">
+
+
+            <div
+                class="product-grid shop-product-grid"
+                id="shopProducts"
+            >
+
+            </div>
+
+
+            <!-- EMPTY -->
+
+            <div
+                class="empty-products"
+                id="emptyProducts"
+            >
+
+                <i class="fa-regular fa-face-frown"></i>
+
+                <h3>
+                    No Sarees Found
+                </h3>
+
+                <p>
+                    Try changing your filters or search.
+                </p>
+
+                <button
+                    class="btn btn-dark"
+                    id="emptyClear"
+                >
+                    Clear Filters
+                </button>
+
+            </div>
+
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="logo footer-logo"
+            >
+
+                <span class="logo-symbol">
+                    G
+                </span>
+
+                <div>
+
+                    <strong>
+                        Guru Aashish
+                    </strong>
+
+                    <small>
+                        SAREE
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <p>
+                Celebrating Indian elegance,
+                one drape at a time.
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Shop
+            </h3>
+
+            <a href="shop.html">
+                All Sarees
+            </a>
+
+            <a href="shop.html?category=silk">
+                Silk
+            </a>
+
+            <a href="shop.html?category=cotton">
+                Cotton
+            </a>
+
+            <a href="shop.html?category=designer">
+                Designer
+            </a>
+
+            <a href="shop.html?category=banarasi">
+                Banarasi
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Help
+            </h3>
+
+            <a href="#">
+                Shipping
+            </a>
+
+            <a href="#">
+                Returns
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Account
+            </h3>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="signup.html">
+                Signup
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Guru Aashish Saree.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Made with ❤️ in India
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button
+    class="back-to-top"
+    id="backToTop"
+>
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- =====================================================
+     WHATSAPP
+===================================================== -->
+
+<a
+    href="#"
+    class="floating-whatsapp"
+    id="floatingWhatsapp"
+>
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="../js/product.js"></script>
+
+<script src="../js/commerce.js"></script>
+<script src="../js/main.js"></script>
+
+<script src="../js/shop.js"></script>
+<script src="../js/storefront-features.js"></script>
+
+
+</body>
+
+</html>

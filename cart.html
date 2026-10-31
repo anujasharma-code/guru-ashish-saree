@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review your Guru Aashish Saree shopping bag.">
+    <meta name="theme-color" content="#8b1e3f">
+    <link rel="manifest" href="app.webmanifest">
+    <title>Your Bag | Guru Aashish Saree</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+
+<!-- Only include on pages that need shop-specific styles -->
+<link rel="stylesheet" href="css/shop.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/commerce.css">
+</head>
+<body>
+    <div class="top-bar"><p>Free shipping on orders above ₹999</p></div>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><span class="logo-symbol">G</span><div><strong>Guru Aashish</strong><small>SAREE</small></div></a>
+            <nav class="commerce-nav"><a href="index.html">Home</a><a href="shop.html">Shop</a></nav>
+            <div class="nav-actions">
+                <a class="nav-icon" href="cart.html" aria-label="Shopping bag"><i class="fa-solid fa-bag-shopping"></i><span class="count" id="cartCount">0</span></a>
+                <a class="nav-icon wishlist-nav" href="wishlist.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="count" id="wishlistCount">0</span></a>
+                <button class="theme-button" id="themeButton" type="button" aria-label="Toggle color theme"><i class="fa-solid fa-moon"></i></button>
+                <button class="nav-icon install-app-button" id="installApp" type="button" aria-label="Install this app" title="Install app"><i class="fa-solid fa-arrow-down"></i></button>
+            </div>
+        </div>
+    </header>
+    <main class="commerce-main">
+        <div class="commerce-heading"><span class="commerce-eyebrow">YOUR SELECTION</span><h1>Your Shopping Bag</h1></div>
+        <div id="cartPage" class="cart-layout"></div>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"><i class="fa-solid fa-check"></i><span id="toastMessage"></span></div>
+    <script src="../js/product.js"></script>
+    <script src="../js/commerce.js"></script>
+    <script src="../js/commerce-pages.js"></script>
+    <script src="../js/storefront-features.js"></script>
+</body>
+</html>

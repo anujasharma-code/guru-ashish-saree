@@ -1,0 +1,18 @@
+{
+  "name": "Guru Aashish Saree",
+  "short_name": "GAS Saree",
+  "description": "Discover sarees from Guru Aashish Saree.",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf7f1",
+  "theme_color": "#8b1e3f",
+  "icons": [
+    {
+      "src": "icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

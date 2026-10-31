@@ -1,0 +1,51 @@
+
+:root {
+    /* Brand colors */
+    --color-primary: #7d203b;
+    --color-primary-dark: #4b1427;
+    --color-gold: #b68a4b;
+    --color-gold-light: #e2c995;
+
+    /* Surfaces and text */
+    --color-background: #faf6ef;
+    --color-surface: #ffffff;
+    --color-text: #282321;
+    --color-muted: #817873;
+    --color-border: rgba(85, 55, 43, .16);
+
+    /* Feedback */
+    --color-success: #347846;
+    --color-warning: #a46b16;
+    --color-danger: #a32135;
+
+    /* Typography */
+    --font-body: "Inter", Arial, sans-serif;
+    --font-display: "Cormorant Garamond", Georgia, serif;
+
+    /* Spacing */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-12: 48px;
+    --space-16: 64px;
+
+    /* Shape and effects */
+    --radius-sm: 4px;
+    --radius-md: 10px;
+    --radius-lg: 18px;
+    --radius-pill: 999px;
+
+    --shadow-card: 0 14px 38px rgba(48, 27, 24, .09);
+    --shadow-modal: 0 20px 60px rgba(0, 0, 0, .2);
+
+    --transition-fast: 180ms ease;
+    --transition-normal: 300ms ease;
+
+    --container-width: 1380px;
+    --container-gutter: 4%;
+    --navbar-height: 90px;
+}
+
